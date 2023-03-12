@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment Five</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="md:w-4/5 mx-auto">
+      <div class="flex justify-between items-center bg-blue-200 mt-5 px-5">
+        <div>
+          <h1 class="text-3xl font-semibold">Interactive</h1>
+          <h3 class="text-1xl">Geometry Genius</h3>
+        </div>
+        <div>
+          <button class="bg-blue-600 px-3 py-1 rounded"><a href="./blog.html">Blog</a></button>
+        </div>
+      </div>
+    </header>
+    <main class="md:w-4/5 mx-auto">
+      <section class="mt-5">
+        <div class="md:flex">
+          <div class="w-full bg-green">
+            <div class="grid md:grid-cols-3 gap-5">
+              <!-- Triangle  -->
+
+              <div class="px-5 py-5 random-bg-color">
+                <img class="w-full h-1/2" src="./images/triangle.png" alt="" />
+                <div class="text-center mt-5">
+                  <h1 id="triangle">Triangle</h1>
+                  <p>Area (A) = 0.5 * b * h</p>
+                </div>
+                <div class="flex justify-between mt-5">
+                  <input id="triangle-input-field-one" class="w-1/3 bg-slate-300 py-1 px-2" type="text" placeholder="b" />
+                  <p>CM</p>
+                  <input id="triangle-input-field-two" class="w-1/3 bg-slate-300 py-1 px-2" type="text" placeholder="h" />
+                  <p>CM</p>
+                </div>
+                <div class="my-5">
+                  <button id="btn-triangle" class="bg-blue-600 w-full py-3 rounded-lg text-white font-semibold">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+
+              <!-- Rectangle -->
+
+              <div class="px-5 py-5">
+                <img class="w-full h-1/2" src="./images/rectangle.png" alt="" />
+                <div class="text-center mt-5">
+                  <h1 id="rectangle">Rectangle</h1>
+                  <p>Area (A) = w * I</p>
+                </div>
+                <div class="flex justify-between mt-5">
+                  <input id="rectangle-input-field-one" class="w-1/3 bg-slate-300 py-1 px-2" type="text" placeholder="w" />
+                  <p>CM</p>
+                  <input id="rectangle-input-field-two" class="w-1/3 bg-slate-300 py-1 px-2" type="text" placeholder="i" />
+                  <p>CM</p>
+                </div>
+                <div class="my-5">
+                  <button id="btn-rectangle" class="bg-blue-600 w-full py-3 rounded-lg text-white font-semibold">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+
+              <!-- Parallelogram -->
+
+              <div class="px-5 py-5">
+                <img class="w-full h-1/2" src="./images/parallelogram.png" alt="" />
+                <div class="text-center mt-5">
+                  <h1 id="parallelogram">Parallelogram</h1>
+                  <p>Area (A) = b * h</p>
+                </div>
+                <div class="flex justify-between mt-5">
+                  <input
+                    id="parallelogram-input-field-one"
+                    class="w-1/3 bg-slate-300 py-1 px-2"
+                    type="text"
+                    placeholder="b"
+                  />
+                  <p>CM</p>
+                  <input
+                    id="parallelogram-input-field-two"
+                    class="w-1/3 bg-slate-300 py-1 px-2"
+                    type="text"
+                    placeholder="h"
+                  />
+
+                  <p>CM</p>
+                </div>
+                <div class="my-5">
+                  <button id="btn-parallelogram" class="bg-blue-600 w-full py-3 rounded-lg text-white font-semibold">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-5">
+              <!-- Rhombus -->
+
+              <div class="px-5 py-5">
+                <img class="w-full h-1/2" src="./images/rhombus.png" alt="" />
+                <div class="text-center mt-5">
+                  <h1 id="rhombus">Rhombus</h1>
+                  <p>Area (A) = 0.5 * d1 * d2</p>
+                </div>
+                <div class="flex justify-between mt-5">
+                  <input id="rhombus-input-field-one" class="w-1/3 bg-slate-300 py-1 px-2" type="text" placeholder="d1" />
+                  <p>CM</p>
+                  <input id="rhombus-input-field-two" class="w-1/3 bg-slate-300 py-1 px-2" type="text" placeholder="d2" />
+                  <p>CM</p>
+                </div>
+                <div class="my-5">
+                  <button id="btn-rhombus" class="bg-blue-600 w-full py-3 rounded-lg text-white font-semibold">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+
+              <!-- Pentagon -->
+
+              <div class="px-5 py-5">
+                <img class="w-full h-1/2" src="./images/pentagon.png" alt="" />
+                <div class="text-center mt-5">
+                  <h1 id="pentagon">Pentagon</h1>
+                  <p>Area (A) = 0.5 * p * b</p>
+                </div>
+                <div class="flex justify-between mt-5">
+                  <input id="pentagon-input-field-one" class="w-1/3 bg-slate-300 py-1 px-2" type="text" placeholder="p" />
+                  <p>CM</p>
+                  <input id="pentagon-input-field-two" class="w-1/3 bg-slate-300 py-1 px-2" type="text" placeholder="b" />
+                  <p>CM</p>
+                </div>
+                <div class="my-5">
+                  <button id="btn-pentagon" class="bg-blue-600 w-full py-3 rounded-lg text-white font-semibold">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+
+              <!-- Ellipse -->
+
+              <div class="px-5 py-5">
+                <img class="w-full h-1/2" src="./images/ellipse.png" alt="" />
+                <div class="text-center mt-5">
+                  <h1 id="ellipse">Ellipse</h1>
+                  <p>Area (A) = pai*ab</p>
+                </div>
+                <div class="flex justify-between mt-5">
+                  <input id="ellipse-input-field-one" class="w-1/3 bg-slate-300 py-1 px-2" type="text" placeholder="a" />
+                  <p>CM</p>
+                  <input id="ellipse-input-field-two" class="w-1/3 bg-slate-300 py-1 px-2" type="text" placeholder="b" />
+                  <p>CM</p>
+                </div>
+                <div class="my-5">
+                  <button id="btn-ellips" class="bg-blue-600 w-full py-3 rounded-lg text-white font-semibold">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-5/12">
+            <h1 class="font-medium text-center mt-5">Area Calculation</h1>
+            <hr class="w-2/3 mx-auto" />
+            <div class="mt-2">
+              <div class="overflow-x-auto">
+                <table class="table w-full">
+                  <!-- head -->
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="area-calculation-container">
+                    <!-- row 
+                    <tr>
+                      <th></th>
+                      <td></td>
+                      <td></td>
+                    </tr> -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/common-function.js"></script>
+    <script src="./js/area-calculation.js"></script>
+  </body>
+</html>
